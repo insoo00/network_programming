@@ -49,7 +49,7 @@ SMTP_PORT = 587
 # 송신자, 수신자, 비밀번호
 sender = 'insoosos1234@gmail.com' 
 family = ['daeheekim@sch.ac.kr', 'ninanooo@gmail.com']
-password = 'zyrineickvzptzyo'
+password = ''
 
 # 메시지 생성하기
 msg = EmailMessage()
