@@ -1,7 +1,7 @@
 from socket import *
 
 sock = socket(AF_INET, SOCK_STREAM)
-sock.bind(('', 80))
+sock.bind(('', 8080))
 sock.listen(2)
 
 def http_200_response(mimeType):
@@ -16,6 +16,8 @@ while True:
     req = data.split('\r\n')[0]
     method, path, protocol = req.split(' ')
     filename = path[1:]
+
+    print('filename: ', filename)
 
     if filename == 'index.html': 
         f = open(filename, 'r', encoding='utf-8')

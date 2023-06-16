@@ -2,8 +2,9 @@ import socket
 import threading
 
 PORT = 2500
-BUF_SIZE = 1024
+# PORT = 3000
 
+BUF_SIZE = 1024
 
 def client_th(sock):
     while True:
